@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="device-width, intial-scale=1.0">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="styleseet" href="../project4thsem/font awesome/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/e32b46dcca.js" crossorigin="anonymous"></script>
+<title>Tours&Travels</title>
+</head>
+<body>
+  <div class="header" id="header">
+    <nav>
+      <input type="checkbox" id="click">
+      <label for="click" class="checkbtn" >
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label class="logo">Tours&Travels</label>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+    <!--header section ends-->
+    
+
+ <!-- services section starts  -->
+
+<section class="services">
+
+  <h1 class="heading"> What we offer </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="../project4thsem/serv-1.png" alt="">
+          <h3>Complete Guide</h3>
+          <p></p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="../project4thsem/serv-2.png" alt="">
+          <h3> Packages</h3>
+          <p></p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="../project4thsem/serv-3.png" alt="">
+          <h3>Family Trips</h3>
+          <p></p>
+          <a href="#" class="btn">read more</a>
+      </div>
+
+      <div class="box">
+          <img src="../project4thsem/serv-6.png" alt="">
+          <h3>Various Adventures</h3>
+          <p></p>
+          <a href="#" class="btn">read more</a>
+      </div>
+      
+  </div>
+
+</section>
+
+
+<script>
+  window.onscroll=function(){myFunction()};
+  var header1=document.getElementById("header");
+  var sticky=header1.offsetTop;
+  function myFunction(){
+      if(window.pageYOffset > sticky){
+          header1.classList.add("sticky");
+      }
+      else{
+          header1.classList.remove("sticky");
+      }
+  }
+</script>
+</body>
+</html>
