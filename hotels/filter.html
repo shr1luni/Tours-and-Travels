@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours&Travels</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="filter.css" />
+    
+    
+    <script src="https://kit.fontawesome.com/e32b46dcca.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <!--header section starts-->
+    <div class="hero1">
+      <nav class="header1" id="header1">
+        <input type="checkbox" id="click">
+        <label for="click" class="checkbtn" >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo" >Tours&Travels</label>
+        <ul>
+          <li><a href="C:\Users\dell\Desktop\project4thsem\home.html">Home</a></li>
+          
+          <li><a href="C:\Users\dell\Desktop\project4thsem\blog.html">Blogs</a></li>
+          <li><a href="C:\Users\dell\Desktop\project4thsem\packages.html">Packages</a></li>
+          <li><a href="#"class="active">Hotels</a></li>
+          <li><a href="C:\Users\dell\Desktop\project4thsem\book.html">Booking</a></li>
+        </ul>
+      </nav>
+      </div>
+      <!--header section ends-->
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search hotels name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterhotels('all')">All</button>
+        <button class="button-value" onclick="filterhotels('Kathmandu')">
+          Kathmandu
+        </button>
+        <button class="button-value" onclick="filterhotels('Pokhara')">
+          Pokhara
+        </button>
+        <button class="button-value" onclick="filterhotels('Chitwan')">
+          Chitwan
+        </button>
+        <button class="button-value" onclick="filterhotels('Mustang')">
+          Mustang
+        </button>
+      </div>
+      <div id="hotels">
+       
+      </div>
+    </div>
+   <!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+     
+
+      <div class="box" data-aos="fade-up">
+          <h3>Contact</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 01-4367876 </a>
+          <a href="#"> <i class="fas fa-phone"></i> 01-4422337 </a>
+          <a href="#"> <i class="fas fa-envelop"></i> tours&travels@gmail.com</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal </a>
+      </div>
+
+      <div class="box" data-aos="fade-up">
+          <h3>Follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+         
+      </div>
+
+  </div>
+
+  
+
+</section>
+
+<!-- footer section ends -->
+   
+  
+    <!-- Script -->
+    <script src="filter.js"></script>
+  
+    
+  </body>
+</html>

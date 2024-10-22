@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap');
+
+:root{
+    --magenta:var(--magenta);
+
+}
+    *{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-rendering:capitalize ;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background-color: var(--magenta);
+    color: cornsilk;
+}
+
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 0%;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 2rem 8%;
+    justify-content: space-between;
+}
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.packages .box-container .box{
+    flex: 1 1 30rem;
+    overflow: hidden;
+    border-radius: 5rem;
+    box-shadow: 0.6rem;
+}
+
+.packages .box-container .box img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content{
+    padding: auto;
+
+}
+
+.packages .box-container .box .content h2{
+    font-size: 3rem;
+    color: black;
+}
+
+.packages .box-container .box .content h2 i{
+    color: var(--magenta);
+}
+
+.packages .box-container .box .content p{
+    color: #333;
+    font-size: 1.6rem;
+    padding: auto;
+}
+
+.packages .box-container .box .content .stars i{
+    color:var(--magenta);
+    font-size: 1.6rem;
+    padding: auto;
+}
+
+.packages .box-container .box .content .price{
+    color: #333;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span{
+    color: aliceblue;
+    font-size: 1.6rem;
+    text-decoration: line-through;
+}
